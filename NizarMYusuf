@@ -1,0 +1,5 @@
+select name
+from employees
+where id not in ( select managerID 
+                  from employees where managerID is not null )
+                
